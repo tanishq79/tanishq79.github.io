@@ -2,158 +2,204 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tanishq Jadhav — Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- ─── NAVBAR ─────────────────────────────────────────── -->
   <nav id="navbar">
-    <div class="nav-logo">TJ</div>
-    <ul class="nav-links">
+    <div class="nav-logo">Tanishq Jadhav</div>
+    <ul class="nav-links" id="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#hackathon">Hackathon</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- HERO -->
+  <!-- ─── HERO ───────────────────────────────────────────── -->
   <section id="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-orb orb-1"></div>
-    <div class="hero-orb orb-2"></div>
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+
     <div class="hero-content">
-      <span class="hero-badge reveal">👋 Open to Opportunities</span>
-      <h1 class="hero-name reveal">Tanishq<br/><span class="grad-text">Jadhav</span></h1>
-      <p class="hero-title reveal">B.Tech CSE (AI &amp; ML) Student &nbsp;|&nbsp; Developer</p>
-      <p class="hero-tagline reveal">Passionate about building real-world solutions using<br/>
-        <span class="highlight">AI</span>, <span class="highlight">Machine Learning</span>, and <span class="highlight">Web Technologies</span>
+      <span class="hero-badge reveal">🚀 Actively Seeking Internship Opportunities</span>
+
+      <h1 class="hero-name reveal">Tanishq Jadhav</h1>
+
+      <p class="hero-subtitle reveal">
+        B.Tech CSE (AI &amp; ML) Student &nbsp;|&nbsp; Developer
       </p>
-      <a href="#projects" class="btn-primary reveal">View Projects <span class="btn-arrow">→</span></a>
+
+      <p class="hero-tagline reveal">
+        Passionate about building real-world solutions using AI, Machine Learning, and Web Technologies.
+      </p>
+
+      <div class="hero-email reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        <a href="mailto:tanishqjadhav23@gmail.com">tanishqjadhav23@gmail.com</a>
+      </div>
+
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
     </div>
-    <div class="hero-scroll-hint">scroll</div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ─── ABOUT ──────────────────────────────────────────── -->
   <section id="about" class="section">
     <div class="container">
-      <h2 class="section-title reveal">About <span class="grad-text">Me</span></h2>
+      <div class="section-head reveal">
+        <span class="section-eyebrow">About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+
       <div class="about-grid">
         <div class="about-text reveal">
           <p>
-            I'm a B.Tech Computer Science (AI &amp; ML) student with a deep curiosity for
-            how intelligent systems can solve real-world challenges. My journey spans
-            machine learning model development, full-stack web projects, and hands-on IoT
-            builds — all driven by a love for turning ideas into working products.
+            I'm a B.Tech Computer Science (AI &amp; ML) student with a strong interest in
+            how intelligent systems can address real-world challenges. My work spans
+            machine learning, web development, and IoT — all driven by a desire to
+            build things that actually work.
           </p>
           <p>
-            From training ML models for industry-grade contact intelligence to designing
-            microcontroller-based home security and medicine dispensers, I thrive at the
-            intersection of software and hardware. I believe great engineering is equal
-            parts rigorous thinking and creative problem-solving.
+            From industry-grade ML pipelines to microcontroller-based hardware projects,
+            I enjoy working at the intersection of software and hardware, combining
+            structured thinking with hands-on experimentation.
           </p>
-          <div class="about-tags">
+          <div class="tag-row">
             <span class="tag">AI &amp; ML</span>
-            <span class="tag">Web Dev</span>
+            <span class="tag">Web Development</span>
             <span class="tag">IoT</span>
-            <span class="tag">Problem Solver</span>
+            <span class="tag">Problem Solving</span>
           </div>
         </div>
-        <div class="about-stats reveal">
+
+        <div class="stats-grid reveal">
           <div class="stat-card">
-            <span class="stat-num grad-text">5+</span>
-            <span class="stat-label">Projects Built</span>
+            <span class="stat-val">5+</span>
+            <span class="stat-lbl">Projects Built</span>
           </div>
           <div class="stat-card">
-            <span class="stat-num grad-text">Top 10</span>
-            <span class="stat-label">Hackathon Finalist</span>
+            <span class="stat-val">Top 10</span>
+            <span class="stat-lbl">Hackathon Finalist</span>
           </div>
           <div class="stat-card">
-            <span class="stat-num grad-text">3+</span>
-            <span class="stat-label">Tech Domains</span>
+            <span class="stat-val">3+</span>
+            <span class="stat-lbl">Tech Domains</span>
           </div>
           <div class="stat-card">
-            <span class="stat-num grad-text">∞</span>
-            <span class="stat-label">Curiosity</span>
+            <span class="stat-val">B.Tech</span>
+            <span class="stat-lbl">CSE — AI &amp; ML</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- ─── PROJECTS ───────────────────────────────────────── -->
   <section id="projects" class="section section-alt">
     <div class="container">
-      <h2 class="section-title reveal">Featured <span class="grad-text">Projects</span></h2>
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
       <div class="projects-grid">
 
+        <!-- 01 -->
         <div class="project-card reveal">
-          <div class="card-header">
-            <span class="card-icon">🤖</span>
-            <span class="card-num">01</span>
+          <div class="card-meta">
+            <span class="card-index">01</span>
+            <span class="card-tag">AI</span>
           </div>
           <h3>IdeaSpark</h3>
-          <p>An AI-powered project idea generator that takes a user's domain and skill level to suggest creative, implementable project concepts with descriptions and tech stack guidance.</p>
-          <div class="tech-stack">
-            <span>Python</span><span>AI/ML</span><span>NLP</span>
+          <p>An AI-powered project idea generator that takes a user's domain and skill level to suggest creative, implementable project concepts with descriptions and tech stack recommendations.</p>
+          <div class="card-stack">
+            <span>Python</span><span>AI / ML</span><span>NLP</span>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/tanishqjadhav" target="_blank" rel="noopener" class="card-btn">View Code</a>
+            <a href="#" class="card-btn card-btn-ghost">Live Demo</a>
           </div>
         </div>
 
+        <!-- 02 -->
         <div class="project-card reveal">
-          <div class="card-header">
-            <span class="card-icon">🧠</span>
-            <span class="card-num">02</span>
+          <div class="card-meta">
+            <span class="card-index">02</span>
+            <span class="card-tag tag-industry">Industry</span>
           </div>
           <h3>Intelligent Contact Builder</h3>
-          <p>An industry-grade ML system that intelligently extracts, structures, and enriches business contact information — streamlining lead generation and CRM workflows.</p>
-          <div class="card-badge">Industry Project</div>
-          <div class="tech-stack">
+          <p>An industry-grade ML system that extracts, structures, and enriches business contact data — streamlining lead generation and CRM workflows for enterprise use.</p>
+          <div class="card-stack">
             <span>Python</span><span>Machine Learning</span><span>Data Processing</span>
           </div>
+          <div class="card-actions">
+            <a href="https://github.com/tanishqjadhav" target="_blank" rel="noopener" class="card-btn">View Code</a>
+          </div>
         </div>
 
+        <!-- 03 -->
         <div class="project-card reveal">
-          <div class="card-header">
-            <span class="card-icon">🏨</span>
-            <span class="card-num">03</span>
+          <div class="card-meta">
+            <span class="card-index">03</span>
+            <span class="card-tag">Systems</span>
           </div>
           <h3>Smart Hotel Booking System</h3>
-          <p>A fully functional console-based hotel management system built in C, featuring room allocation, booking records, billing computation, and file-based persistence.</p>
-          <div class="tech-stack">
+          <p>A console-based hotel management application in C with room allocation, booking records, billing computation, and file-based data persistence.</p>
+          <div class="card-stack">
             <span>C</span><span>File I/O</span><span>Data Structures</span>
           </div>
+          <div class="card-actions">
+            <a href="https://github.com/tanishqjadhav" target="_blank" rel="noopener" class="card-btn">View Code</a>
+          </div>
         </div>
 
+        <!-- 04 -->
         <div class="project-card reveal">
-          <div class="card-header">
-            <span class="card-icon">🔒</span>
-            <span class="card-num">04</span>
+          <div class="card-meta">
+            <span class="card-index">04</span>
+            <span class="card-tag">IoT</span>
           </div>
           <h3>Home Safety &amp; Security System</h3>
-          <p>An Arduino-based IoT security solution integrating motion sensors, door alarms, and real-time alerts to monitor and protect home environments autonomously.</p>
-          <div class="tech-stack">
+          <p>An Arduino-based IoT solution integrating motion sensors, door alarms, and real-time alerts to autonomously monitor and secure home environments.</p>
+          <div class="card-stack">
             <span>Arduino</span><span>C++</span><span>IoT</span><span>Sensors</span>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/tanishqjadhav" target="_blank" rel="noopener" class="card-btn">View Code</a>
           </div>
         </div>
 
+        <!-- 05 -->
         <div class="project-card reveal">
-          <div class="card-header">
-            <span class="card-icon">💊</span>
-            <span class="card-num">05</span>
+          <div class="card-meta">
+            <span class="card-index">05</span>
+            <span class="card-tag">IoT</span>
           </div>
           <h3>Smart Medicine Dispenser</h3>
-          <p>An automated medicine dispensing device that schedules and dispenses medications at preset times using servo mechanisms and buzzer alerts — reducing human error in healthcare.</p>
-          <div class="tech-stack">
+          <p>An automated dispensing device that schedules and releases medications at preset intervals using servo mechanisms and buzzer alerts, minimising human error in healthcare routines.</p>
+          <div class="card-stack">
             <span>Arduino</span><span>Servo Motors</span><span>IoT</span>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/tanishqjadhav" target="_blank" rel="noopener" class="card-btn">View Code</a>
           </div>
         </div>
 
@@ -161,98 +207,136 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
+  <!-- ─── SKILLS ─────────────────────────────────────────── -->
   <section id="skills" class="section">
     <div class="container">
-      <h2 class="section-title reveal">My <span class="grad-text">Skills</span></h2>
-      <div class="skills-grid">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Skills</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
 
+      <div class="skills-grid">
         <div class="skill-group reveal">
-          <div class="skill-group-icon">💻</div>
           <h4>Programming</h4>
           <div class="skill-pills">
             <span>C</span><span>Python</span><span>JavaScript</span>
           </div>
         </div>
-
         <div class="skill-group reveal">
-          <div class="skill-group-icon">🌐</div>
-          <h4>Web</h4>
+          <h4>Web Development</h4>
           <div class="skill-pills">
             <span>HTML</span><span>CSS</span>
           </div>
         </div>
-
         <div class="skill-group reveal">
-          <div class="skill-group-icon">🛠️</div>
           <h4>Tools</h4>
           <div class="skill-pills">
-            <span>Git</span><span>Arduino IDE</span>
+            <span>Git</span><span>GitHub</span><span>Arduino IDE</span>
           </div>
         </div>
-
         <div class="skill-group reveal">
-          <div class="skill-group-icon">🧬</div>
           <h4>Domain</h4>
           <div class="skill-pills">
-            <span>AI/ML Basics</span><span>Data Structures</span>
+            <span>AI / ML Basics</span><span>Data Structures</span>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- HACKATHON -->
+  <!-- ─── HACKATHON ──────────────────────────────────────── -->
   <section id="hackathon" class="section section-alt">
     <div class="container">
-      <h2 class="section-title reveal">Hackathon <span class="grad-text">Achievement</span></h2>
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Achievement</span>
+        <h2 class="section-title">Hackathon</h2>
+      </div>
+
       <div class="hackathon-card reveal">
-        <div class="hackathon-badge">🏆 Top 10 Finalist</div>
+        <span class="hk-badge">Top 10 Finalist</span>
         <h3>Second Opinion</h3>
-        <p class="hackathon-sub">Healthcare Decision Support System</p>
-        <p class="hackathon-desc">
+        <p class="hk-subtitle">Healthcare Decision Support System</p>
+        <p class="hk-desc">
           Built a healthcare decision-support platform that assists doctors and patients by
-          providing AI-driven second opinions on diagnoses and treatment suggestions —
-          aiming to reduce medical errors and improve healthcare outcomes.
+          providing AI-driven second opinions on diagnoses and treatment plans —
+          aiming to reduce medical errors and improve patient outcomes.
         </p>
-        <div class="hackathon-tags">
-          <span>Healthcare AI</span><span>Decision Support</span><span>Hackathon</span>
+        <div class="card-stack">
+          <span>Healthcare AI</span><span>Decision Support</span><span>Python</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- ─── CONTACT ────────────────────────────────────────── -->
   <section id="contact" class="section">
-    <div class="container contact-container">
-      <h2 class="section-title reveal">Let's <span class="grad-text">Connect</span></h2>
-      <p class="contact-subtitle reveal">Have an idea, opportunity, or just want to chat? I'm always open.</p>
-      <div class="contact-links reveal">
-        <a href="mailto:your.email@example.com" class="contact-card" target="_blank" rel="noopener">
-          <span class="contact-icon">✉️</span>
-          <span class="contact-label">Email Me</span>
-          <a href="mailto:tanishqjadhav23@gmail.com" class="contact-handle">
-  tanishqjadhav23@gmail.com
-</a>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Contact</span>
+        <h2 class="section-title">Get in Touch</h2>
+      </div>
+      <p class="contact-sub reveal">
+        Open to internships, collaborations, and opportunities. Feel free to reach out.
+      </p>
+
+      <div class="contact-grid reveal">
+
+        <a href="mailto:tanishqjadhav23@gmail.com" class="contact-card">
+          <div class="cc-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+          </div>
+          <div class="cc-text">
+            <span class="cc-label">Email</span>
+            <span class="cc-value">tanishqjadhav23@gmail.com</span>
+          </div>
+          <span class="cc-arrow">→</span>
         </a>
-        <a href="https://github.com/" class="contact-card" target="_blank" rel="noopener">
-          <span class="contact-icon">🐙</span>
-          <span class="contact-label">GitHub</span>
-          <span class="contact-handle">github.com/tanishqjadhav</span>
+
+        <a href="https://github.com/tanishqjadhav" target="_blank" rel="noopener" class="contact-card">
+          <div class="cc-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+              <path d="M9 18c-4.51 2-5-2-7-2"/>
+            </svg>
+          </div>
+          <div class="cc-text">
+            <span class="cc-label">GitHub</span>
+            <span class="cc-value">github.com/tanishqjadhav</span>
+          </div>
+          <span class="cc-arrow">→</span>
         </a>
-        <a href="https://linkedin.com/" class="contact-card" target="_blank" rel="noopener">
-          <span class="contact-icon">💼</span>
-          <span class="contact-label">LinkedIn</span>
-          <span class="contact-handle">linkedin.com/in/tanishqjadhav</span>
+
+        <a href="https://linkedin.com/in/tanishqjadhav" target="_blank" rel="noopener" class="contact-card">
+          <div class="cc-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </div>
+          <div class="cc-text">
+            <span class="cc-label">LinkedIn</span>
+            <span class="cc-value">linkedin.com/in/tanishqjadhav</span>
+          </div>
+          <span class="cc-arrow">→</span>
         </a>
+
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ─── FOOTER ─────────────────────────────────────────── -->
   <footer>
-    <p>Designed &amp; built by <span class="grad-text">Tanishq Jadhav</span> · 2025</p>
+    <p>Built by <strong>Tanishq Jadhav</strong> &nbsp;·&nbsp; 2025</p>
   </footer>
 
   <script src="script.js"></script>
